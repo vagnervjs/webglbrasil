@@ -1,0 +1,6 @@
+---
+title : Sitemap
+standalone: true
+---
+<% for post in @getCollection("html").toJSON(): %>
+<%= @absoluteURI(post) %><% end %>

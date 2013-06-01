@@ -1,0 +1,53 @@
+{
+	"name": "WebGLBrasil",
+	"version": "0.1.0",
+	"private": true,
+	"description": "Aprenda WebGL, em português!",
+	"homepage": "https://github.com/vagnersantana/webglbrasil",
+	"keywords": [
+		"webgl",
+		"brasil",
+		"webglbrasil",
+		"html5",
+		"front-ent",
+		"3d",
+		"canvas"
+	],
+	"author": "Vagner Santana <vagnervjs@gmail.com> (http://vagnersantana.com)",
+	"maintainers": [
+		"Vagner Santana <vagnervjs@gmail.com>"
+	],
+	"contributors": [
+		""
+	],
+	"bugs": {
+		"url": "https://github.com/vagnersantana/webglbrasil/issues"
+	},
+	"repository" : {
+		"type" : "git",
+		"url" : "https://github.com/vagnersantana/webglbrasil.git"
+	},
+	"dependencies": {
+		"docpad": "6.x",
+		"docpad-plugin-coffeescript": "2.x",
+		"docpad-plugin-eco": "2.x",
+		"docpad-plugin-marked": "2.x",
+		"docpad-plugin-partials": "2.x",
+		"docpad-plugin-stylus": "2.x",
+		"docpad-plugin-text": "2.x",
+		"grunt": "~0.3.17",
+		"grunt-css": "~0.3.2",
+		"bal-util": "~1.15.3",
+		"underscore": "~1.4.3",
+	    "docpad-plugin-robotskirt": "latest",
+	    "docpad-plugin-cleanurls": "latest",
+	    "docpad-plugin-highlightjs": "latest",
+	    "slug": "latest",
+	    "moment": "latest",
+	    "juice": "latest"
+	},
+	"devDependencies": {
+		"docpad-plugin-livereload": "2.x"
+	},
+	"main": "node_modules/docpad/bin/docpad-server"
+}

@@ -1,0 +1,51 @@
+---
+layout: blog
+ogtype: article
+---
+<article class="text-page post container <%= if @document.fullPagePost != 'true' then 'limit-line-length' %>">
+	
+	<% if @document.showTitleH1 != 'false': %>
+		<h1><%= @document.title %></h1>
+	<% end %>
+
+	<div class="post-content">
+		<%- @content %>
+	</div>
+	
+	<hr>
+	
+	<aside class="post-info">
+		<p class="post-author like-h">
+			Por <a href="https://plus.google.com/108752857690265245030?rel=author">Vagner Santana</a> 
+			
+			<% if @document.originalDate: %>
+				originalmente <%= @dateAsText(@document.originalDate, 'em ') %> e atualizado  
+				<span class="post-data"><%= @dateAsText(@document.date, 'em ') %></span>.
+			<% else: %>
+				<span class="post-data"><%= @dateAsText(@document.date, 'em ') %></span>.
+			<% end %>
+		</p>
+	
+<!-- 		<div class="post-social">
+			
+			<a href="https://www.facebook.com/dialog/feed?app_id=309652569089723&amp;link=<%= @encodedAbsoluteURI(@document) %>&amp;redirect_uri=<%= @encodedAbsoluteURI(@document) %>" rel="nofollow" class="share-facebook">
+				<span aria-hidden="true" class="icone-facebook"></span>
+				Compartilhar no Facebook
+			</a>
+			
+			<a href="https://twitter.com/intent/tweet?text=<%= @encodedTitle(@document) %>&amp;url=<%= @encodedAbsoluteURI(@document) %>&amp;via=sergio_caelum" rel="nofollow" class="share-twitter">
+				<span aria-hidden="true" class="icone-twitter"></span>
+				Compartilhar no Twitter
+			</a>
+			
+			<a href="/comentarios/?url=<%= @encodedAbsoluteURI(@document) %>&amp;title=<%= @encodedTitle(@document) %>" rel="nofollow" class="share-comment">
+				<span aria-hidden="true" class="icone-bubbles"></span>
+				Comentários
+			</a>
+			
+		</div>
+ -->	</aside>
+</article>
+
+
+	

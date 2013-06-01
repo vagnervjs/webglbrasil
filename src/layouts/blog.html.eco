@@ -1,0 +1,19 @@
+---
+layout: base
+pagetype: blog
+---
+<header>
+	<nav class="header-menu header-item">
+		<a href="/" class="icone">
+			<span aria-hidden="true" class="icone-home"></span>
+			<span class="icone-alt">Home</a>
+		</a>
+		<a href="/feed.xml" class="icone">
+			<span aria-hidden="true" class="icone-feed"></span>
+			<span class="icone-alt">Feed RSS</a>
+		</a>
+	</nav>
+
+</header>
+
+<%- @content %>

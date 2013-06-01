@@ -1,0 +1,36 @@
+<!doctype html>
+<html class="no-js" <%- if @document.offlineManifest then "manifest=\"#{@document.offlineManifest}\"" %>>
+<head>
+	<%- @partial('snippets/head.html',@) %>
+	
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+    <![endif]-->
+
+	<main>
+		<header>
+			<div class="logo">
+				<div class="logo-webgl"></div>
+			</div>
+		</header>
+
+		<hr>
+		
+		<article>
+			<%- @content %>
+		</article>
+	</main>
+	
+	<footer></footer>
+
+	<!-- Scripts -->
+	<%- @getBlock('scripts').add(@getGruntedScripts()).toHTML() %>
+</body>
+</html>

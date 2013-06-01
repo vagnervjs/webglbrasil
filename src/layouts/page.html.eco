@@ -1,0 +1,7 @@
+---
+layout: blog
+pagetype: blog
+---
+<article class="container text-page narrow-lists page-<%= @document.name %>">
+	<%- @content %>
+</article>

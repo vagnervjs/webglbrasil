@@ -1,0 +1,26 @@
+---
+layout: page
+title: Home
+ogtype: website
+name: home
+---
+
+<% subtitulos = ['Artigos'] %>
+<% for tipo, tipo_i in ['posts']: %>
+  <h2><%= subtitulos[tipo_i] %></h2>
+  <ul class="posts">
+    <% for post in @getCollection(tipo).toJSON(): %>
+    
+      <li class="one-post <%= post.class %> category-<%= @slug(post.category) %> type-<%= @getLayoutName(post) %>">
+        <div class="post-info">
+          <!-- <span class="post-date"><%= @dateAsText(post.date) %></span>  -->
+          <!-- <span class="post-category"><%= post.category %></span>  -->
+        </div>
+                        
+        <a class="post-link" href="<%= if @getLayoutName(post) == 'redirect' then post.originalURI else post.url + '/' %>">
+          <%= post.title %>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
