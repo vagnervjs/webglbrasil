@@ -43,7 +43,7 @@ This project uses [DocPad](https://github.com/bevry/docpad), a static generator 
 
 This is where the generated files are stored, once DocPad has been run. However, this directory is unnecessary for versioning, so it is ignored (.gitignore).
 
-*This topic is based on [Browser Diet README file](https://github.com/zenorocha/browser-diet/blob/master/README.md)
+*This topic is based on [Browser Diet README file](github.com/zenorocha/browser-diet/blob/master/README.md)
 
 ## Team
 
