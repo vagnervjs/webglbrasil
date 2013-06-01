@@ -9,7 +9,7 @@ Seleção do melhor conteúdo de WebGL, traduzidos em português.
 1. Clone the project and run the server
 
 	``` bash
-	git clone git://github.com/webglbrasil.git
+	git clone git://github.com/vagnervjs/webglbrasil.git
 	npm install
 	docpad run
 	```
