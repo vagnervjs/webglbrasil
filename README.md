@@ -51,7 +51,7 @@ This is where the generated files are stored, once DocPad has been run. However,
 
 [![Vagner Santana](http://gravatar.com/avatar/d050e3a593aa5c49738028ade14606ed?s=70)](http://vagnersantana.com) |
 --- | --- | --- | --- | --- | --- | ---
-[Vagner Santana](http://vagnersantana.com)<br>@vagnervjs|
+[Vagner Santana](http://vagnersantana.com)<br>[@vagnervjs](http://twitter.com/vagnervjs)|
 
 
 ## License
