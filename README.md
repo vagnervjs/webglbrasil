@@ -56,5 +56,5 @@ This is where the generated files are stored, once DocPad has been run. However,
 
 ## License
 
-- Code is under MIT license
-- Content is under Creative Commons BY-SA 3.0
+- Code is under [MIT license](http://vagnersantana.mit-license.org)
+- Content is under [Creative Commons BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/deed.en_US)
